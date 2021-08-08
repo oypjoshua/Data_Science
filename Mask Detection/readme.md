@@ -4,6 +4,8 @@
 
 ## Motivation
 
+In 2019, Covid-19 has taken the world by storm. In the ensuing months, many countries have started implementations of mask regulations. Malls, restaurants, supermarkets, and other services around the globe have also started enforcing that all patrons are regulated to wear a mask for the safety of 
+
 ## Data
 
 - [Kaggle](https://www.kaggle.com/ashishjangra27/face-mask-12k-images-dataset) - 12k images from [Ashish Jangra](https://www.kaggle.com/ashishjangra27) (kaggle)
