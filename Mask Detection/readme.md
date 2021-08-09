@@ -4,26 +4,35 @@
 
 ## Motivation
 
-In 2019, Covid-19 has taken the world by storm. In the ensuing months, many countries have started implementations of mask regulations. Malls, restaurants, supermarkets, and other services around the globe have also started enforcing that all patrons are regulated to wear a mask for the safety of 
+In 2019, Covid-19 has taken the world by storm. In the ensuing months, many countries have started implementations of mask regulations. Malls, restaurants, supermarkets, and other services around the globe have also started enforcing that all patrons are regulated to wear a mask for the safety of patrons and others. In a bid to automate such checks, an efficient and accurate live face mask detector is desired.
 
-## Data
+## Project Overview and Outline
 
-- [Kaggle](https://www.kaggle.com/ashishjangra27/face-mask-12k-images-dataset) - 12k images from [Ashish Jangra](https://www.kaggle.com/ashishjangra27) (kaggle)
+### Introduction
 
-## Libraries (Requirements)
+### Data
+
+For this project, we will be using a dataset of ~12,000 images from [Kaggle](https://www.kaggle.com/ashishjangra27/face-mask-12k-images-dataset), courtesy of [Ashish Jangra](https://www.kaggle.com/ashishjangra27) (kaggle). The images with the face mask were scrapped from google search, while those without are processed from the [CelebFace dataset](https://www.kaggle.com/jessicali9530/celeba-dataset), courtesy of [Jessica Li](https://www.kaggle.com/jessicali9530). The final dataset comprises the following:
+
+  - Training set (10,000 images total)
+    - With Mask (5,000 images)
+    - Without Mask (5,000 images)
+  - Validation set (800 images total)
+    - With Mask (400 images)
+    - Without Mask (400 images)
+  - Test set (988 images total)
+    - With Mask (479 images)
+    - Without Mask (509 images)
+ 
+### Libraries (Requirements)
+
+We used the following libraries
 
 - [NumPy](https://numpy.org/)
 - [TensorFlow](https://www.tensorflow.org/)
 - [OpenCV](https://opencv.org/)
 - [Caffe-based face detector](https://caffe.berkeleyvision.org/)
 - [Keras](https://keras.io/)
-
-## Project Overview and Outline
-
-### Introduction
-
-  - Import packages
-  - Visualisation and manipulation of data
 
 ### Model Building and Tuning
 
