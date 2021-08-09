@@ -11,7 +11,7 @@ In 2019, Covid-19 has taken the world by storm. In the ensuing months, many coun
 
 For this project, the end goal is to develop a live system, able to detect if someone is wearing a mask or not. As such, I note that there are two possible directions that I can proceed in:
 
-1). Build a model that detects if a face has a mask on -> run the live feed through a search for faces with or without masks -> run these faces through aforementioned model
+1). Build a model that classifies if a face has a mask on -> run the live feed through a search for faces with or without masks -> run these faces through aforementioned model
 
 2). Build a model that detects faces with mask, and a model that detects faces without mask -> run the live feed through both models and identify all faces with masks, and all faces without masks.
 
