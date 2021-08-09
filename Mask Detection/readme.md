@@ -7,6 +7,16 @@
 
 In 2019, Covid-19 has taken the world by storm. In the ensuing months, many countries have started implementations of mask regulations. Malls, restaurants, supermarkets, and other services around the globe have also started enforcing that all patrons are regulated to wear a mask for the safety of patrons and others. In a bid to automate such checks, an efficient and accurate live face mask detector is desired.
 
+## Direction
+
+For this project, the end goal is to develop a live system, able to detect if someone is wearing a mask or not. As such, I note that there are two possible directions that I can proceed in:
+
+1). Build a model that detects if a face has a mask on -> run the live feed through a search for faces with or without masks -> run these faces through aforementioned model
+
+2). Build a model that detects faces with mask, and a model that detects faces without mask -> run the live feed through both models and identify all faces with masks, and all faces without masks.
+
+For this project, I have decided to go in the first direction.
+
 ## Data
 
 For this project, we will be using a dataset of ~12,000 images from [Kaggle](https://www.kaggle.com/ashishjangra27/face-mask-12k-images-dataset), courtesy of [Ashish Jangra](https://www.kaggle.com/ashishjangra27) (kaggle). The images with the face mask were scrapped from google search, while those without are processed from the [CelebFace dataset](https://www.kaggle.com/jessicali9530/celeba-dataset), courtesy of [Jessica Li](https://www.kaggle.com/jessicali9530). The final dataset comprises the following:
