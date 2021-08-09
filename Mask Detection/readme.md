@@ -61,5 +61,4 @@ However, the biggest obstacle was the selection of face detection model for real
 
 ## Project Extensions
 
-  - Run multiface detection
-  - Check for poorly worn mask
+For a project extension, one can attempt to a mutli-class classification including masks that are poorly worn. The model should classify faces into 3 categories, (Mask worn properly, Mask not worn properly, Mask not worn), or even split the "Mask not worn properly" into several different classes. Possible difficulties that might arise would include and are not limited to: finding appropriate datasets to compile a good model on, accuracy of the model (since multi-class classficiation tends to have lower accuracy than binary classification).
