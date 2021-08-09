@@ -13,7 +13,15 @@ For this project, the end goal is to develop a live system, able to detect if so
 
 1). Build a model that classifies if a face has a mask on -> run the live feed through a search for faces with or without masks -> run these faces through aforementioned model
 
+Flow:
+
+![Direction_1](https://github.com/oypjoshua/Data_Science/blob/main/Mask%20Detection/pictures/Direction_1.png)
+
 2). Build a model that detects faces with mask, and a model that detects faces without mask -> run the live feed through both models and identify all faces with masks, and all faces without masks.
+
+Flow:
+
+![Direction_2](https://github.com/oypjoshua/Data_Science/blob/main/Mask%20Detection/pictures/Direction_2.png)
 
 For this project, I have decided to go in the first direction.
 
