@@ -1,5 +1,9 @@
 <h1 align="center">Face Mask Detector</h1>
-<h4 align="center">oypjoshua</h2>
+<h4 align="center">oypjoshua</h4>
+
+<p align="center">
+  <img src="demo.gif" alt="animated" />
+</p>
 
 # Project Overview and Outline
 
