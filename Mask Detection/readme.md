@@ -26,7 +26,7 @@ For this project, we will be using a dataset of ~12,000 images from [Kaggle](htt
  
 ### Libraries (Requirements)
 
-We used the following libraries
+The project was worked on in Python 3.9.1, and the model building was coded on [Jupyter notebook](https://jupyter.org/). Libraries used for the project can be found listed below, and a copy of their respective versions can be found in the [requirements.txt](https://github.com/oypjoshua/Data_Science/blob/main/Mask%20Detection/requirements.txt) file.
 
 - [NumPy](https://numpy.org/)
 - [TensorFlow](https://www.tensorflow.org/)
@@ -36,22 +36,17 @@ We used the following libraries
 
 ### Model Building and Tuning
 
-  - Model selection [DenseNet201](https://www.mathworks.com/help/deeplearning/ref/densenet201.html)
-  - Model building
-  - Results
+From the various choices of model selection, [DenseNet201](https://www.mathworks.com/help/deeplearning/ref/densenet201.html) was selected for the model building. As can be seen in the [model building notebook](https://github.com/oypjoshua/Data_Science/blob/main/Mask%20Detection/face_mask.ipynb), an accuracy of >99% was achieved within the first 6 epochs. As such, I shall spare readers a fancy accuracy-loss graph. To ensure that the model was not overfitting, we evaluated the model on the test set, and was very contend with the 99.5% accuracy that was achieved. A [summary](https://github.com/oypjoshua/Data_Science/blob/main/Mask%20Detection/base_model_summary.ipynb) of DenseNet201 is available, and the model itself can be found [here](https://github.com/oypjoshua/Data_Science/blob/main/Mask%20Detection/mask_detection_128x128.rar).
 
 ### Real Time Analysis
 
-  - Video streaming (OpenCV)
-  - Face detection (With/ Without Mask)
-  - Preprocessing face to fit model (128x128)
-  - Model running on face
+For the live streaming, we used OpenCV's inhouse video capture to access the webcam. Upon receiving the image, we run it through OpenCV's [dnn.blobFromImage](https://docs.opencv.org/4.5.2/d6/d0f/group__dnn.html#ga29f34df9376379a603acd8df581ac8d7), using weights from [ImageNet](https://www.image-net.org/) to detect faces that may or may not be wearing masks. We then crop these images, process them, and run them through our pretrained model, to figure out if these faces have a mask on. Finally, we feed this infomation back to the live capture, tag it, and then show it.
 
 ## Difficulties
 
   - Selection of dataset (eventually settling on data set from kaggle), options included individually masking of faces with [MaskTheFace](https://github.com/aqeelanwar/MaskTheFace)
   - Selection of model (running multiple models and evetually deciding on DenseNet201) (Selection from mobilenet/ sequential/ resnet)
-  - Selection of real time analysis face detection (haar cascades, mtcnn, local binary patterns, [blobFromImage](https://www.pyimagesearch.com/2017/11/06/deep-learning-opencvs-blobfromimage-works/)
+  - Selection of real time analysis face detection (haar cascades, mtcnn, local binary patterns, [blobFromImage](https://www.pyimagesearch.com/2017/11/06/deep-learning-opencvs-blobfromimage-works/) 
 
 ## Project Extensions
 
